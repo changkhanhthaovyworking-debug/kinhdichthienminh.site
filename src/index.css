@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Be Vietnam Pro", "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+  
+  --color-trad-brown: #4A2C17;
+  --color-trad-brown-light: #6B3F2A;
+  --color-trad-ivory: #FAF6EF;
+  --color-trad-beige: #F0E8D8;
+  --color-trad-gold: #C9A96E;
+  --color-trad-white: #FFFFFF;
+  
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+}
+
+@layer base {
+  body {
+    @apply bg-trad-ivory text-trad-brown font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.bg-decoration {
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--color-trad-beige) 0%, transparent 70%);
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.ink-wash {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  opacity: 0.08;
+  pointer-events: none;
+  background-image: radial-gradient(circle at 100% 100%, var(--color-trad-brown) 0%, transparent 60%);
+  z-index: -1;
+}
+
+.glass-header {
+  @apply sticky top-0 z-50 bg-trad-ivory/80 backdrop-blur-md border-b border-trad-brown/5 h-20 flex items-center;
+}
+
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-8 md:px-16;
+}
+
+.btn-primary {
+  @apply bg-trad-brown text-trad-white px-9 py-4 rounded-full font-semibold transition-all hover:bg-trad-brown-light shadow-lg shadow-trad-brown/15 active:scale-95;
+}
+
+.btn-secondary {
+  @apply text-trad-brown px-8 py-3 rounded-full font-medium transition-all flex items-center gap-2 hover:opacity-80 active:scale-95;
+}
+
+.card-trad {
+  @apply bg-trad-white border border-trad-brown/5 rounded-3xl p-8 transition-all hover:shadow-2xl hover:shadow-trad-brown/5 hover:-translate-y-1;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-trad-gold/20 rounded-full hover:bg-trad-gold/40;
+}
+
