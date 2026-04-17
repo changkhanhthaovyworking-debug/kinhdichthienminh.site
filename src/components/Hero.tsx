@@ -43,7 +43,7 @@ export default function Hero({ onContactClick }: HeroProps) {
             
             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white shadow-[0_20px_50px_rgba(74,44,23,0.3)]">
               <img 
-                src="/logo-lhp.png" 
+                src="./logo-lhp.png" 
                 alt="Thầy Thiên Minh" 
                 className="w-full h-full object-cover hover:scale-210 transition-transform duration-700"
                 referrerPolicy="no-referrer"

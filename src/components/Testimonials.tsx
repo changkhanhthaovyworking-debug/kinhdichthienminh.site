@@ -2,13 +2,13 @@ import { motion } from "motion/react";
 import { Quote } from "lucide-react";
 
 const feedbackImages = [
-  { url: "/feedback1.jpg", alt: "Phản hồi khách hàng 1" },
-  { url: "/fb2.jpg", alt: "Phản hồi khách hàng 2" },
-  { url: "/fb3.jpg", alt: "Phản hồi khách hàng 3" },
-  { url: "/fb4.jpg", alt: "Phản hồi khách hàng 4" },
-  { url: "/fb5.jpg", alt: "Phản hồi khách hàng 5" },
-  { url: "/fb6.jpg", alt: "Phản hồi khách hàng 6" },
-  { url: "/fb7.jpg", alt: "Phản hồi khách hàng 7" },
+  { url: "./feedback1.jpg", alt: "Phản hồi khách hàng 1" },
+  { url: "./fb2.jpg", alt: "Phản hồi khách hàng 2" },
+  { url: "./fb3.jpg", alt: "Phản hồi khách hàng 3" },
+  { url: "./fb4.jpg", alt: "Phản hồi khách hàng 4" },
+  { url: "./fb5.jpg", alt: "Phản hồi khách hàng 5" },
+  { url: "./fb6.jpg", alt: "Phản hồi khách hàng 6" },
+  { url: "./fb7.jpg", alt: "Phản hồi khách hàng 7" },
 ];
 
 export default function Testimonials() {

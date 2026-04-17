@@ -19,7 +19,7 @@ export default function About() {
         >
           <div className="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white bg-white">
             <img 
-              src="/thay-thien-minh.jpg" 
+              src="./thay-thien-minh.jpg" 
               alt="Thầy Thiên Minh" 
               className="w-full h-full object-cover hover:scale-105 transition-all duration-700"
               referrerPolicy="no-referrer"

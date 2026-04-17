@@ -15,7 +15,7 @@ export default function Header({ onContactClick }: HeaderProps) {
         <div className="flex items-center gap-2 md:gap-3">
           <div className="w-9 h-9 md:w-10 md:h-10 flex items-center justify-center overflow-hidden rounded-full border border-trad-gold/30 bg-white shadow-sm">
             <img 
-              src="/logo-lhp.png" 
+              src="./logo-lhp.png" 
               alt="Logo" 
               className="w-7 h-7 md:w-8 md:h-8 object-contain"
             />
