@@ -6,7 +6,7 @@ import ServiceDetailModal, { ServiceDetail } from "./ServiceDetailModal";
 const services: ServiceDetail[] = [
   {
     id: "vande-1",
-    title: "Xem cụ thể một vấn đề",
+    title: "Quẻ xem cụ thể một vấn đề",
     form: "Văn bản",
     description: "Bạn nên chọn xem quẻ này nếu đang muốn đặt câu hỏi cho một tình huống cụ thể, phân vân giữa nhiều lựa chọn hoặc cần ra quyết định quan trọng nhưng chưa nắm rõ toàn cảnh.",
     benefits: [
@@ -23,7 +23,7 @@ const services: ServiceDetail[] = [
   },
   {
     id: "vande-2",
-    title: "Xem cụ thể hai vấn đề",
+    title: "Quẻ xem cụ thể hai vấn đề",
     form: "Văn bản",
     description: "Bạn nên chọn xem nếu: Bạn đang muốn đặt câu hỏi cho hai tình huống cụ thể. Bạn phân vân giữa nhiều lựa chọn và cần tìm hướng đi phù hợp. Bạn cần ra quyết định quan trọng nhưng chưa nắm rõ toàn cảnh. Bạn muốn hiểu rõ hơn về tình hình hiện tại trước khi hành động. Tương tự như xem một vấn đề nhưng dành cho những ai đang băn khoăn về hai tình huống khác nhau cùng lúc, giúp tiết kiệm chi phí và có cái nhìn tổng quát hơn.",
     benefits: [
@@ -40,7 +40,7 @@ const services: ServiceDetail[] = [
   },
   {
     id: "vannien",
-    title: "Xem quẻ vận niên (một năm)",
+    title: "Quẻ vận niên (một năm)",
     form: "Văn bản lưu trữ",
     description: "Biết rõ những biến chuyển trong 12 tháng tới (tính từ ngày đặt lịch). Luận giải chi tiết vận khí từng tháng để đón lành - tránh dữ và chuẩn bị cho các bước chuyển quan trọng.",
     benefits: [
@@ -54,7 +54,7 @@ const services: ServiceDetail[] = [
   },
   {
     id: "menhmay",
-    title: "Xem quẻ mệnh tổng quan trọn đời",
+    title: "Quẻ mệnh tổng quan trọn đời",
     form: "Video & Văn bản lưu trữ",
     description: "Dành cho ai muốn hiểu sâu sắc về bản ngã, nghiệp lực và toàn bộ hành trình cuộc đời từ sự nghiệp, tài lộc đến hôn nhân, gia đạo.",
     benefits: [
@@ -68,7 +68,7 @@ const services: ServiceDetail[] = [
   },
   {
     id: "capdoi",
-    title: "Mệnh trọn đời dành cho cặp đôi",
+    title: "Quẻ mệnh trọn đời dành cho cặp đôi",
     form: "Video & Văn bản lưu trữ",
     description: "Phân tích sự tương hợp giữa hai người, nắm bắt các giai đoạn thịnh suy trong mối quan hệ và tìm cách hóa giải xung đột để xây dựng nền tảng bền vững.",
     benefits: [
@@ -82,7 +82,7 @@ const services: ServiceDetail[] = [
   },
   {
     id: "sim",
-    title: "Luận sim phong thủy",
+    title: "Quẻ luận sim phong thủy",
     form: "Văn bản",
     description: "Phân tích SĐT bạn đang dùng có thực sự phù hợp với bản mệnh hay đang cản trở tài lộc, công danh của bạn.",
     benefits: [
@@ -117,9 +117,9 @@ export default function Services({ onContactClick }: ServicesProps) {
   return (
     <section id="services" className="section-padding">
       <div className="container-custom">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Chọn Quẻ Phù Hợp Với Bạn</h2>
-          <div className="w-24 h-1 bg-trad-gold mx-auto rounded-full opacity-30" />
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">Chọn Quẻ Phù Hợp Với Bạn</h2>
+          <div className="w-16 md:w-24 h-1 bg-trad-gold mx-auto rounded-full opacity-30" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

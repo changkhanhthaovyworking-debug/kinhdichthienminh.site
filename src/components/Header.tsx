@@ -12,15 +12,18 @@ export default function Header({ onContactClick }: HeaderProps) {
   return (
     <header className="glass-header">
       <div className="container-custom w-full flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 flex items-center justify-center overflow-hidden rounded-full border border-trad-gold/30 bg-white">
+        <div className="flex items-center gap-2 md:gap-3">
+          <div className="w-9 h-9 md:w-10 md:h-10 flex items-center justify-center overflow-hidden rounded-full border border-trad-gold/30 bg-white shadow-sm">
             <img 
               src="/logo-lhp.png" 
               alt="Logo" 
-              className="w-8 h-8 object-contain"
+              className="w-7 h-7 md:w-8 md:h-8 object-contain"
             />
           </div>
-          <span className="text-xl font-serif font-bold tracking-tight">KINH DỊCH THIÊN MINH</span>
+          <span className="text-lg md:text-xl font-serif font-bold tracking-tight">
+            <span className="md:hidden">THIÊN MINH</span>
+            <span className="hidden md:inline">KINH DỊCH THIÊN MINH</span>
+          </span>
         </div>
 
         <nav className="hidden md:flex items-center gap-8 font-medium">

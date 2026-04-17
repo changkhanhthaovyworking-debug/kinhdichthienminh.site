@@ -24,7 +24,7 @@ export default function FloatingContact() {
   ];
 
   return (
-    <div className="fixed bottom-8 right-8 z-[100] flex flex-col gap-4">
+    <div className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[100] flex flex-col gap-3 md:gap-4">
       {contacts.map((contact, index) => (
         <motion.a
           key={index}
@@ -36,10 +36,10 @@ export default function FloatingContact() {
           transition={{ delay: index * 0.1 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className={`flex items-center justify-center w-14 h-14 rounded-full shadow-lg text-white ${contact.color} hover:brightness-110 shadow-trad-brown/20 transition-all`}
+          className={`flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full shadow-lg text-white ${contact.color} hover:brightness-110 shadow-trad-brown/20 transition-all`}
           title={contact.label}
         >
-          {contact.icon}
+          <div className="scale-90 md:scale-100">{contact.icon}</div>
         </motion.a>
       ))}
     </div>

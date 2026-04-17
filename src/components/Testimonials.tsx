@@ -1,58 +1,48 @@
 import { motion } from "motion/react";
 import { Quote } from "lucide-react";
 
-const testimonials = [
-  {
-    text: "Lời giải quẻ rất sâu sắc và thực tế. Nó giúp tôi có cái nhìn rõ ràng hơn về quyết định kinh doanh sắp tới.",
-    author: "Anh Minh",
-    role: "Doanh nhân",
-  },
-  {
-    text: "Tôi tìm thấy sự bình yên sau khi nghe tư vấn. Không hề có cảm giác mê tín, mà là một sự thấu hiểu tâm lý tuyệt vời.",
-    author: "Chị Lan",
-    role: "Giáo viên",
-  },
-  {
-    text: "Thầy tư vấn cực kì có tâm, xem xong lâu lâu hỏi lại thầy vẫn trả lời và giải đáp nhiệt tình, giới thiệu cho nhiều bạn rồi ai cũng thấy đúng.",
-    author: "Chị Hoàng",
-    role: "Nội trợ",
-  },
+const feedbackImages = [
+  { url: "/feedback1.jpg", alt: "Phản hồi khách hàng 1" },
+  { url: "/fb2.jpg", alt: "Phản hồi khách hàng 2" },
+  { url: "/fb3.jpg", alt: "Phản hồi khách hàng 3" },
+  { url: "/fb4.jpg", alt: "Phản hồi khách hàng 4" },
+  { url: "/fb5.jpg", alt: "Phản hồi khách hàng 5" },
+  { url: "/fb6.jpg", alt: "Phản hồi khách hàng 6" },
+  { url: "/fb7.jpg", alt: "Phản hồi khách hàng 7" },
 ];
 
 export default function Testimonials() {
   return (
     <section className="section-padding bg-trad-ivory">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Khách Hàng Nói Gì</h2>
-          <p className="text-trad-brown/60">Những trải nghiệm thực tế từ những người đã tin tưởng chúng tôi</p>
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Khách Hàng Nói Gì</h2>
+          <p className="text-sm md:text-base text-trad-brown/60">Hình ảnh phản hồi thực tế từ những người đã tin tưởng Dịch sư Thiên Minh</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((item, index) => (
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+          {feedbackImages.map((item, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-8 rounded-3xl border border-trad-brown/5 relative"
+              className="break-inside-avoid rounded-2xl overflow-hidden border border-trad-brown/5 shadow-sm hover:shadow-xl transition-all duration-500 bg-white p-2"
             >
-              <Quote className="w-10 h-10 text-trad-gold/20 absolute top-6 right-6" />
-              <p className="text-lg italic text-trad-brown/80 mb-8 leading-relaxed relative z-10">
-                "{item.text}"
-              </p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-trad-beige flex items-center justify-center font-bold text-trad-brown">
-                  {item.author[0]}
-                </div>
-                <div>
-                  <h4 className="font-bold">{item.author}</h4>
-                  <p className="text-sm text-trad-brown/50">{item.role}</p>
-                </div>
-              </div>
+              <img 
+                src={item.url} 
+                alt={item.alt}
+                className="w-full h-auto rounded-xl object-cover cursor-zoom-in"
+                referrerPolicy="no-referrer"
+                loading="lazy"
+              />
             </motion.div>
           ))}
+        </div>
+        
+        <div className="mt-12 text-center text-trad-brown/40 text-sm">
+          * Thông tin khách hàng được bảo mật và chỉ chia sẻ khi có sự cho phép.
         </div>
       </div>
     </section>
